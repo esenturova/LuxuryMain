@@ -1,0 +1,71 @@
+@import "../global";
+.rate {
+  &__back {
+    background-image: url(../../assets/img/png/rates.png);
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 120vh;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #14274a, $alpha: 0.2);
+      z-index: 0;
+    }
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    @include font($c-darkBlue, 60px, bold, $font-slab, normal, 72px);
+    margin: 80px 0 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  &__text {
+    @include font($c-darkBlue, 25px, normal, $font-slab, normal, 29px);
+    max-width: 1100px;
+    text-align: center;
+    margin-bottom: 82px;
+  }
+
+  &__img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+  &__suptitle {
+    @include font($color-white, 60px, bold, $font-mont, normal, 73px);
+    background-color: $c-darkBlue;
+    margin: 0;
+    text-align: center;
+    padding: 41px 0;
+  }
+  &__second-row {
+    border: 2px solid $c-darkBlue;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 81px;
+    padding: 50px 100px;
+  }
+  &__words {
+    @include font($c-darkBlue, 25px, bold, $font-mont, normal, 30px);
+    margin-left: 40px;
+    text-align: center;
+  }
+ 
+}

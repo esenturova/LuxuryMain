@@ -1,0 +1,53 @@
+@import "../global";
+
+.footer {
+    padding: 100px 0;
+  background-color: #14274a;
+  background-size: cover;
+  &__main-row{
+      display: flex;
+      align-items: center;
+  }
+  &__row {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  &__mail{
+    @include font($color-white, 14px, normal, $font-mont, normal, 17px);
+    max-width: 264px;
+    margin-top:21px
+  }
+  &__list {
+    @include font($color-white, 14px, bold, $font-mont, normal, 17px);
+    margin-top: 25px;
+    margin-left: 100px;
+  }
+  &__face{
+    @include font($color-white, 14px, bold, $font-mont, normal, 17px);
+   
+    margin-left: 20px;
+  }
+  &__info{
+    @include font($color-white, 16px, bold, $font-mont, normal, 20px);
+   
+  }
+  &__input{
+      margin-top: 30px;
+      border:2px $color-milk solid;
+      border-radius: 2px;
+      padding:15px 40px;
+      background-color: transparent;
+  }
+  &__label{
+      background-color: $color-milk;
+      color: #14274a;
+      padding: 16px 20px;
+      border-radius: 2px;
+  }
+  &__svg-row{
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../global";
+.header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+    &__logo{
+        max-width: 200px;
+    }
+    &__row{
+        justify-content: space-between;
+        align-items: center;
+    }
+   &__list{
+    @include font($color-white, 25px, 600, $font-slab, normal, 1.1);
+      
+       margin-left: 88px;
+       cursor: pointer;
+       transition: 0.4s;
+       border-bottom: 2px solid transparent;
+       &:first-child{
+           margin-left: 0;
+       }
+       &:hover{
+           border-bottom: 2px solid $color-white;
+       }
+   }
+   &__link{
+       color: $color-white;
+   }
+   &__menu{
+       display: flex;
+   }
+}

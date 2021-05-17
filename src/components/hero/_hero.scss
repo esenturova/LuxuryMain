@@ -1,0 +1,75 @@
+@import "../global";
+.hero{
+  position: relative;
+  &__back {
+    background-image: url(../../assets/img/png/hero.png);
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #14274A, $alpha: .3);
+      z-index: 0;
+  }
+    
+    // background: rgba(20, 39, 74, 0.5);
+    
+  }
+  &__row {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include font($color-white, 150px, bold, $font-slab, normal, 100px);
+    margin: 0;
+    padding: 0;
+  }
+  &__suptitle1 {
+    @include font($color-white, 30px, normal, $font-slab, normal, 61px);
+    margin-top: 300px;
+  }
+  &__suptitle2 {
+    @include font($color-white, 50px, bold, $font-mont, normal, 72px);
+    letter-spacing: 0.4em;
+  }
+  &__text {
+    @include font($color-white, 25px, normal, $font-mont, normal, 30px);
+    max-width: 585px;
+    letter-spacing: 0.1em;
+  }
+  &__button {
+    @include font($color-white, 25px, bold, $font-mont, normal, 30px);
+    background-color: $color-milk;
+    padding: 22px 33px 27px 32px;
+    border-radius: 5px;
+    margin :0 auto;
+    margin-top: 100px;
+  }
+  &__buttonsvg {
+    fill: $color-white;
+    margin-right: 18px;
+  }
+  &__button-row {
+    display: flex;
+    align-items: center;
+  }
+  &__scroll
+   {
+    @include font($color-white, 20px, bold, $font-mont, normal, 30px);
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  &__scrollsvg{
+    margin:0 auto;
+    margin-top: 15px;
+  }
+  
+}

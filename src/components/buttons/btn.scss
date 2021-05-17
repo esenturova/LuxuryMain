@@ -1,0 +1,11 @@
+@import "../global";
+.button{
+        background-color: $color-milk;
+        padding: 20px 65px;
+        color: $color-white;
+        border-radius: 5px;
+        @include font($color-white, 20px, normal, $font-mont, normal, 24px);
+        margin-top: 30px;
+        border: none;
+
+}

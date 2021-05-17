@@ -1,0 +1,19 @@
+@import "../global";
+.review{
+    padding: 115px 0;
+    text-align: center;
+    &__title{
+        @include font($c-darkBlue, 60px, bold, $font-slab, normal, 1.1);
+        
+        text-align: center;
+    }
+    &__text{
+        margin: 25px 0 20px;
+        @include font($c-darkBlue, 30px, bold, $font-slab, normal, 1.1);
+      
+    }
+    &__author{
+        @include font($c-darkBlue, 25px, bold, $font-slab, normal, 1.1);
+      
+    }
+}
